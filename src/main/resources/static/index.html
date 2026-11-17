@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8e9e5">
+  <meta name="description" content="Small-batch bakery treats, made with a little extra sweetness.">
+  <title>Sweet Bel-Erina | Home-baked happiness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <div class="top-ribbon"><span>Made fresh in small batches</span><span class="ribbon-heart">✦</span><span>Reserve a little joy for later</span></div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Sweet Bel-Erina home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 25.5c0-8.7 7-15.7 15.7-15.7 3.6 0 6.7 1.2 9.3 3.3 4.6.4 8.3 4.2 8.3 8.9 0 2.7-1.2 5.1-3.1 6.7-.8 7.5-7.1 13.3-14.8 13.3C14.9 42 8 34.6 8 25.5Z" fill="currentColor"/><path d="M15 23c2.2-3 5.5-4.5 9.2-4.5 3.8 0 7.2 1.6 9.3 4.7M17.3 30.3c1.7 1.3 3.7 2 6 2s4.4-.7 6.1-2" fill="none" stroke="#fff8f1" stroke-width="2.2" stroke-linecap="round"/><circle cx="18" cy="24.1" r="1.1" fill="#fff8f1"/><circle cx="30.1" cy="24.1" r="1.1" fill="#fff8f1"/></svg></span>
+      <span class="brand-copy"><span class="brand-name" id="brandName">SWEET BEL-ERINA</span><span class="brand-note">BAKES WITH LOVE</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#goodies">The goodies</a><a href="#our-story">Our little story</a><a href="#how-it-works">How to order</a>
+    </nav>
+    <div class="header-actions">
+      <button class="header-login" id="headerLogin" type="button">Sign in</button>
+      <button class="cart-button" id="openCart" type="button" aria-label="Open basket">Basket <span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-wrap" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A little bakery, a lot of heart</p>
+        <h1 id="heroTitle">Baked to make<br><em>your day</em> sweeter.</h1>
+        <p class="hero-description">Soft centers, golden edges, and the kind of treats that make ordinary moments feel like something worth celebrating.</p>
+        <div class="hero-buttons"><a class="button button-primary" href="#goodies">Find your favorite <span aria-hidden="true">↗</span></a><button class="button button-quiet" id="heroReserve" type="button"><span class="play-icon">♡</span> Reserve for later</button></div>
+        <div class="hero-footnote"><span class="tiny-flower">✿</span> Baked fresh, just for you <span class="footnote-dot">·</span> Philippines</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-photo-frame"><img src="/manus-storage/async-images/KX5Evw7mhNqziPjoqd4swG/image-1.webp" alt="A cozy table of fresh banana loaf, chocolate crinkles and dream cake" class="hero-photo" onerror="this.remove()"><span class="photo-label">Fresh from our oven</span></div>
+        <div class="hero-sticker" aria-label="Baked in little batches"><span>♡</span><small>BAKED IN<br>LITTLE BATCHES</small></div>
+        <span class="hero-sparkle sparkle-one">✳</span><span class="hero-sparkle sparkle-two">✧</span>
+      </div>
+    </section>
+
+    <section class="promise-strip" aria-label="Bakery promises"><div><span class="promise-icon">✿</span><span>Made fresh to order</span></div><div><span class="promise-icon">♡</span><span>Small-batch goodness</span></div><div><span class="promise-icon">⌂</span><span>Delivered with care</span></div></section>
+
+    <section class="products-section" id="goodies">
+      <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> A treat for every mood</p><h2>Our little <em>goodies</em></h2></div><p class="section-intro">A few favorites from our kitchen. Pick something lovely, then choose when you'd like it.</p></div>
+      <div class="category-tabs" role="group" aria-label="Filter products"><button class="category-tab active" data-category="all" type="button">Everything</button><button class="category-tab" data-category="Loaves" type="button">Loaves</button><button class="category-tab" data-category="Cookies" type="button">Cookies</button><button class="category-tab" data-category="Cakes" type="button">Cakes</button><button class="category-tab" data-category="Pastries" type="button">More sweet things</button></div>
+      <div class="product-grid" id="productGrid"><div class="loading-card">Whisking up the menu…</div></div>
+    </section>
+
+    <section class="story-section" id="our-story"><div class="story-decoration">✿</div><div class="story-note"><p class="eyebrow">From our oven to your table</p><h2>Little joys.<br><em>Made by hand.</em></h2><p>We believe the best treats are made slowly, shared generously, and remembered long after the last crumb. Every order is baked in small batches and prepared for the time you choose.</p><a href="#how-it-works" class="text-link">A sweet and simple order <span>→</span></a></div><div class="story-quote"><span class="quote-mark">“</span><p>Some days call for a slice of cake. Most days do, actually.</p><span class="quote-sign">— from our little kitchen</span></div></section>
+
+    <section class="how-section" id="how-it-works"><p class="eyebrow centered">From craving to doorstep</p><h2 class="centered">Three little steps</h2><div class="steps"><article><span class="step-number">01</span><h3>Pick your treat</h3><p>Choose your favorites and tuck them into your basket.</p></article><article><span class="step-number">02</span><h3>Choose your time</h3><p>Tell us where to deliver and when you’d like your order.</p></article><article><span class="step-number">03</span><h3>Make it official</h3><p>Choose COD or GCash, then we’ll get baking for you.</p></article></div></section>
+
+    <section class="closing-cta"><span class="closing-flower">✿</span><p>Something sweet is just around the corner.</p><a class="button button-light" href="#goodies">Browse the goodies <span>↗</span></a></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-brand"><span class="footer-logo">♡</span><div><strong id="footerStoreName">SWEET BEL-ERINA</strong><small>Handmade with a little extra love.</small></div></div><div class="footer-links"><a href="#goodies">Menu</a><a href="#how-it-works">Ordering</a><a href="/admin.html">Store settings</a></div><p class="copyright">© <span id="yearNow"></span> Sweet Bel-Erina. Baked in small batches.</p></footer>
+
+  <div class="mobile-quick-wrap" id="mobileQuickWrap"><div class="mobile-quick-menu" id="mobileQuickMenu" hidden><button type="button" data-mobile-action="add">Add to cart</button><button type="button" data-mobile-action="cart">View cart</button><button type="button" data-mobile-action="checkout">Checkout</button></div><button class="mobile-dots" id="mobileDots" type="button" aria-expanded="false" aria-label="Open ordering actions"><span>•••</span></button></div>
+
+  <div class="overlay" id="cartOverlay" hidden></div><aside class="cart-drawer" id="cartDrawer" aria-label="Your basket" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow">Tucked in your basket</p><h2>Your <em>basket</em></h2></div><button class="icon-button" type="button" data-close-cart aria-label="Close basket">×</button></div><div id="cartLines" class="cart-lines"></div><div class="cart-empty" id="cartEmpty"><span>♡</span><p>Your basket is waiting for something lovely.</p><a href="#goodies" data-close-cart>Browse the goodies</a></div><div class="cart-bottom"><div class="cart-subtotal"><span>Subtotal</span><strong id="cartSubtotal">₱0.00</strong></div><p>Delivery is calculated at checkout.</p><button class="button button-primary full-width" id="cartCheckout" type="button">Continue to checkout <span>→</span></button></div></aside>
+
+  <div class="modal-backdrop" id="authModal" hidden><section class="modal-card auth-card" role="dialog" aria-modal="true" aria-labelledby="authTitle"><button class="icon-button modal-close" data-close-modal="authModal" type="button" aria-label="Close">×</button><span class="modal-flower">✿</span><p class="eyebrow centered">Good to see you</p><h2 id="authTitle">Sign in to order</h2><p class="modal-copy">Use Google or Facebook to save your name and delivery details for next time.</p><button class="social-button google-button" id="googleLogin" type="button"><span class="social-g">G</span> Continue with Google</button><button class="social-button facebook-button" id="facebookLogin" type="button"><span class="social-f">f</span> Continue with Facebook</button><p class="provider-note" id="providerNote"></p><p class="privacy-note">We only use your sign-in to manage your bakery orders. No password sign-up is offered.</p></section></div>
+
+  <div class="modal-backdrop" id="checkoutModal" hidden><section class="modal-card checkout-card" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><button class="icon-button modal-close" data-close-modal="checkoutModal" type="button" aria-label="Close">×</button><p class="eyebrow">One last sweet thing</p><h2 id="checkoutTitle">Make it a <em>reservation</em></h2><p class="checkout-intro">We’ll bake your order fresh for the time you choose.</p><div class="checkout-layout"><form id="checkoutForm" class="checkout-form">
+      <label>Your name<input name="name" id="checkoutName" required maxlength="160" autocomplete="name" placeholder="Name for the order"></label>
+      <label>Phone number<input name="phone" id="checkoutPhone" required maxlength="40" autocomplete="tel" inputmode="tel" placeholder="09xx xxx xxxx"></label>
+      <label>Delivery address<input name="address" id="checkoutAddress" required maxlength="1000" autocomplete="street-address" placeholder="Start typing your address"/><small id="mapHint">Choose a suggestion for the best delivery estimate.</small></label>
+      <label>When should we have it ready?<input name="fulfillmentAt" id="fulfillmentAt" required type="datetime-local"></label>
+      <fieldset class="payment-choices"><legend>How would you like to pay?</legend><label class="payment-option"><input type="radio" name="paymentMethod" value="COD" checked><span class="radio-custom"></span><span><strong>Cash on Delivery</strong><small>Pay when your goodies arrive.</small></span></label><label class="payment-option"><input type="radio" name="paymentMethod" value="GCASH"><span class="radio-custom"></span><span><strong>GCash online</strong><small>Transfer to the shop’s GCash account.</small></span><span class="discount-tag">Save 6% on delivery</span></label></fieldset>
+      <label class="refund-check"><input id="noRefundAck" type="checkbox" required><span>I understand that once my order is made, it is non-refundable.</span></label>
+      <div class="checkout-error" id="checkoutError" role="alert" hidden></div><button class="button button-secondary full-width" id="quoteButton" type="button">Calculate delivery & total</button><button class="button button-primary full-width" id="placeOrder" type="submit" disabled>Place my reservation <span>♡</span></button>
+    </form><aside class="order-summary"><h3>Your sweet little summary</h3><div id="checkoutItems" class="summary-items"></div><div class="summary-row"><span>Subtotal</span><strong id="summarySubtotal">₱0.00</strong></div><div class="summary-row"><span>Delivery</span><strong id="summaryDelivery">Calculate at checkout</strong></div><div class="summary-row discount-row" id="summaryDiscountRow" hidden><span>GCash shipping treat</span><strong id="summaryDiscount">−₱0.00</strong></div><div class="summary-total"><span>Total</span><strong id="summaryTotal">₱0.00</strong></div><p class="distance-note" id="distanceNote">Delivery rate depends on the distance from our bakery.</p></aside></div></section></div>
+
+  <div class="modal-backdrop" id="orderSuccessModal" hidden><section class="modal-card success-card" role="dialog" aria-modal="true" aria-labelledby="successTitle"><button class="icon-button modal-close" data-close-modal="orderSuccessModal" type="button" aria-label="Close">×</button><span class="modal-flower">♡</span><p class="eyebrow centered">It’s official</p><h2 id="successTitle">Your order is <em>reserved!</em></h2><p class="modal-copy" id="successCopy"></p><div class="gcash-instructions" id="gcashInstructions" hidden><p class="eyebrow">GCash payment</p><p id="gcashDetails"></p><label>GCash reference number<input id="gcashReference" maxlength="100" placeholder="Enter after you transfer"></label><button class="button button-secondary full-width" id="submitReference" type="button">Send reference for review</button><small>Your order stays pending until the bakery confirms the transfer.</small></div><button class="button button-primary full-width" data-close-modal="orderSuccessModal" type="button">Lovely, thank you</button></section></div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

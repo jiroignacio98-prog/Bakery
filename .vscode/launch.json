@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Sweet Bel-Erina (local)",
+      "request": "launch",
+      "mainClass": "com.sweetbelerina.BakeryApplication",
+      "projectName": "sweet-bel-erina",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
